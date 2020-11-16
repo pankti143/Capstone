@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="col-sm-4 porductHolder" *ngFor="let product of products">
+        <div class="col-item">
+            <div class="photo">
+                <a><img src="../../assets/AirPods.jpg" class="img-responsive" alt="a" /></a>
+            </div>
+            <div class="info col-md-8" style="margin: 2rem;">
+                <div class="price">
+                    <h5 class="text-center price">{{ product.name}} </h5>
+                </div>
+                    <div class="price">
+                        <h5 class="text-center price">{{ product.brand}} </h5>
+                    </div>
+                    <div class="price ">
+                        <h5 class="text-center price">{{ product.quantity }} </h5>
+                    </div>
+                    <div class="price">
+                        <h5 class="text-center price">{{ product.price}} </h5>
+                    </div>
+                    <div class="price ">
+                        <h5 class="text-center price">{{ product.quantity }} </h5>
+                    </div>
+                    <div class="price  ">
+                        <h5 class="text-center price">{{ product.email  }} </h5>
+                    </div>
+                    <div class="price">
+                <a class="hidden-sm hoverClass">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 porductHolder" *ngFor="let product of products">
+                <div class="col-item">
+                    <div class="photo">
+                        <a><img src="../../assets/iphone12.jpg" class="img-responsive" alt="a" /></a>
+                    </div>
+                    <div class="info col-md-8" style="margin: 2rem;">
+                        <div class="price">
+                            <h5 class="text-center price">{{ product.name}} </h5>
+                        </div>
+                            <div class="price">
+                                <h5 class="text-center price">{{ product.brand}} </h5>
+                            </div>
+                            <div class="price ">
+                                <h5 class="text-center price">{{ product.quantity }} </h5>
+                            </div>
+                            <div class="price">
+                                <h5 class="text-center price">{{ product.price}} </h5>
+                            </div>
+                            <div class="price ">
+                                <h5 class="text-center price">{{ product.quantity }} </h5>
+                            </div>
+                            <div class="price  ">
+                                <h5 class="text-center price">{{ product.email  }} </h5>
+                            </div>
+                            <div class="price">
+                        <a class="hidden-sm hoverClass">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        
+<!-- 
+<table *ngIf="products.length > 0" class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Email</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{ product.name }}</td>
+            <td>{{ product.brand }}</td>
+            <td>{{ product.email }}</td>
+            <td>{{ product.quantity }}</td>
+            <td>{{ product.price }}</td>
+            <td><img src="../../assets/Airpds.jpg" style="height: 100px; width:200px"></td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="products.length === 0" class="alert alert-info" role="info">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Information:</span>
+    The product collection is empty.
+</div>
+ -->
